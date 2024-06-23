@@ -1,5 +1,13 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/*공통************************************************************/
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 13px;
+  }
+}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -14,6 +22,10 @@ h5,
   font-weight: 400;
 }
 
+li {
+  list-style: none;
+}
+
 /*헤더영역*/
 header {
   background-image: linear-gradient(
@@ -26,9 +38,33 @@ header {
   background-position: center center;
   background-attachment: fixed;
 }
+@media screen and (max-width: 768px) {
+  header {
+    background-position: center left;
+  }
+}
 
 /*네비게이션 영역*/
 .nav-link:hover,
 .nav-link.active {
   color: #ffc107 !important;
+}
+
+/*경력*/
+.card-hover:hover {
+  background-color: #ffc10726;
+  cursor: pointer;
+}
+
+/*banner*/
+#banner {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/sns-bg.jpg");
+  background-size: cover; /*이미지 사이즈 full로 나오도록*/
+  background-position: center top; /*윈도우 사이즈를 줄였을 때 여자를 중심으로*/
+  background-attachment: fixed; /*붙박이 처럼 붙이기*/
 }

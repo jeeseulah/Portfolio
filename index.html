@@ -13,6 +13,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--MY-->
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
   </head>
@@ -23,10 +24,10 @@
         id="home"
         class="d-flex flex-column vh-100 text-white justify-content-center align-items-center"
       >
-        <h1 class="display-3 fw-bold mb-5">JEE SEUL AH</h1>
-        <h4 class="fs-2 mb-3">Portfolio</h4>
+        <h1 class="display-3 fw-bold mb-3">JEE SEUL AH</h1>
+        <h4 class="fs-2 mb-5">Portfolio</h4>
         <!--font size, margin_bottom-->
-        <p class="lead mb-5">Front-end Developer로서의 꿈을 키우고 있습니다.</p>
+        <!-- <p class="lead mb-5">Front-end Developer로서의 꿈을 키우고 있습니다.</p> -->
         <button
           class="btn btn-outline-warning rounded-pill"
           type="button"
@@ -85,8 +86,11 @@
         </div>
       </header>
       <!--헤더 끝-->
-      <!--네비게이션 시작 fixed-top-->
-      <nav id="nav" class="navbar bg-black navbar-dark navbar-expand-md">
+      <!--네비게이션 시작-->
+      <nav
+        id="nav"
+        class="navbar bg-dark navbar-dark navbar-expand-md position-sticky top-0 z-3"
+      >
         <div class="container">
           <button
             class="navbar-toggler"
@@ -97,7 +101,6 @@
             aria-expanded="false"
             aria-label="메뉴"
           >
-            <!--aria가 붙은 것은 전부 접근성을 위한것 -->
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -110,7 +113,13 @@
                 <a class="nav-link open-font" href="#about">ABOUT</a>
               </li>
               <li class="nav-item me-5">
-                <a class="nav-link open-font" href="#portfolio">PORTFOLIO</a>
+                <a class="nav-link open-font" href="#project">PROJECT</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link open-font" href="#career">CAREER</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link open-font" href="#experience">EXPERIENCE</a>
               </li>
               <li class="nav-item me-5">
                 <a class="nav-link open-font" href="#contact">CONTACT</a>
@@ -121,47 +130,379 @@
       </nav>
       <!--네비게이션 끝-->
       <!--슬아 소개 시작-->
-      <div id="about">
-        <section class="container py-5" id="about-chef">
-          <div class="text-center py-5">
-            <h2 class="fw-bold">ABOUT</h2>
-            <p class="lead text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur, doloribus!
-            </p>
+      <div id="about" class="py-5">
+        <!--소개-->
+        <section class="container-fluid pb-5 pt-3">
+          <div class="text-center pb-5">
+            <h1 class="fw-bold">ABOUT</h1>
           </div>
 
           <div class="row justify-content-center align-items-center">
-            <div class="col-md-4">
+            <div class="col-md-5 col-lg-4">
               <img
                 src="./images/seulaImg1.jpg"
-                alt="쉐프 프로필 사진"
-                class="img-fluid rounded"
+                alt="지슬아 프로필 사진"
+                class="img-fluid rounded mb-3"
               />
             </div>
-            <div class="col-md-8 col-lg-5 gx-lg-5">
-              <h2 class="fw-bold my-3">지슬아</h2>
-              <h5 class="fw-bold mb-3">1991.11.26</h5>
-              <p class="lh-lg">
-                안녕하세요.
-                <br />
-                새로운 기술을 배우고 문제를 해결하는 것을 즐기는 지슬아 입니다.
-                <br />
-                2024년 1월부터 프론트엔드 개발자로서의 길을 걷기 위해
-                준비했습니다.
-              </p>
+            <div class="col-md-7 col-lg-5 gx-lg-5">
+              <div class="pb-3 border-bottom">
+                <p class="fw-bold fs-3 mb-1">
+                  지슬아 <span class="fs-6">1991.11.26</span>
+                </p>
+                <p>
+                  안녕하세요.
+                  <br />
+                  새로운 기술을 배우고 문제를 해결하는 것을 즐기는 지슬아
+                  입니다.
+                  <br />
+                  2024년 1월부터 Frontend Developer로서의 길을 걷기 위해
+                  준비했습니다.
+                </p>
+              </div>
+              <div class="py-3 border-bottom">
+                <p class="fw-bold fs-4 mb-0">EDUCATION</p>
+                <ul class="ps-0">
+                  <li class="fw-bold">국립한경대학교</li>
+                  <li>정보제어공학과 (2010년 입학 - 2014년 2월 졸업)</li>
+                  <li class="fw-bold">숭신여자고등학교</li>
+                  <li>(2017년 입학 - 2010년 2월 졸업)</li>
+                </ul>
+              </div>
+              <div class="pt-3">
+                <p class="fw-bold fs-4 mb-0">CERTIFICATE</p>
+                <ul class="ps-0">
+                  <li>
+                    웹디자인기능사 (필기합격)
+                    <span class="text-muted">2024.04</span>
+                  </li>
+                  <li>
+                    정보처리기사 (필기합격)
+                    <span class="text-muted">2024.03</span>
+                  </li>
+                  <li>
+                    2종보통운전면허 (최종합격)
+                    <span class="text-muted">2018.01</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
+        <!--스킬-->
+        <section class="container pb-5 text-center">
+          <h2 class="fw-bold">SKILLS ABILITY</h2>
+          <h3>Language/Framework/Library</h3>
+          <p>
+            <img
+              src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/Javascript-ffb13b?style=flat-square&logo=javascript&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/JQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat-square"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white"
+            />&nbsp
+          </p>
+          <p>
+            <img
+              src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/JAVA-0769AD?style=flat-square&logo=java&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=springboot&logoColor=white"
+            />&nbsp
+          </p>
+          <p>
+            <img
+              src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
+            />&nbsp
+          </p>
+          <h3>Tools</h3>
+          <p>
+            <img
+              src="https://img.shields.io/badge/Intellij IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/MySQL%20Workbench-4479A1?style=flat-square&logo=mysqlworkbench&logoColor=white"
+            />&nbsp
+          </p>
+          <p>
+            <img
+              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"
+            />&nbsp
+            <img
+              src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"
+            />
+          </p>
+        </section>
       </div>
       <!--슬아 소개 끝-->
-      <!--포트폴리오 시작-->
-      <div id="portfolio"></div>
-      <!--포트폴리오 끝-->
+      <!--프로젝트 시작-->
+      <div id="project" class="bg-black py-5">
+        <div class="container overflow-hidden">
+          <div class="text-center text-white py-5">
+            <h1 class="fw-bold mb-3">PROJECT</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, cumque.
+            </p>
+          </div>
+          <div>
+            <div class="row pb-5 g-4">
+              <div class="col-6">
+                <img
+                  src="./images/portfolio1.jpg"
+                  alt="포트폴리오사진1"
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="./images/portfolio2.jpg"
+                  alt="포트폴리오사진2"
+                  class="img-fluid img-thumbnail"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--프로젝트 끝-->
+      <!--경력 시작-->
+      <div id="career" class="container overflow-hidden py-5">
+        <div class="py-5 text-center">
+          <h1 class="fw-bold mb-3">CAREER</h1>
+          <p class="lead text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            cupiditate.
+          </p>
+        </div>
+        <div>
+          <div class="row mb-5 g-4">
+            <div class="col-md-6">
+              <div class="card-hover shadow p-4 rounded">
+                <div class="d-flex align-items-center py-3">
+                  <img
+                    src="./images/service1.jpg"
+                    alt="서비스1"
+                    class="rounded-circle"
+                  />
+                  <div class="ms-3">
+                    <h3 class="fw-bold">에이디테크놀로지</h3>
+                    <p class="lead text-muted fs-5">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  molestiae laboriosam vel corporis at deserunt facere! Libero
+                  sunt a suscipit iusto accusantium, recusandae laborum sed!
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-hover shadow p-4 rounded">
+                <div class="d-flex align-items-center py-3 justify-content-end">
+                  <div class="me-3 text-end">
+                    <h3 class="fw-bold">라온피플</h3>
+                    <p class="lead text-muted fs-5">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <img
+                    src="./images/service2.jpg"
+                    alt="서비스2"
+                    class="rounded-circle"
+                  />
+                </div>
+                <p class="text-end">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  molestiae laboriosam vel corporis at deserunt facere! Libero
+                  sunt a suscipit iusto accusantium, recusandae laborum sed!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--경력 끝-->
+      <!--SNS 섹션 시작-->
+      <div id="banner" class="py-5">
+        <div class="container text-white text-center">
+          <h1 class="fw-bold my-3"></h1>
+        </div>
+      </div>
+      <!--SNS 섹션 끝-->
+      <!--경험 시작-->
+      <div id="experience" class="container overflow-hidden py-5">
+        <div class="text-center py-5">
+          <h1 class="fw-bold mb-3">EXPERIENCE</h1>
+          <p class="lead text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Asperiores, tempore.
+          </p>
+        </div>
+        <div class="row pb-5 gy-4">
+          <div class="col-sm-6 col-lg">
+            <div class="card">
+              <img
+                src="./images/blog1.jpg"
+                class="card-img-top"
+                alt="블로그1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fs-4">블로그1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-warning btn-sm">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg">
+            <div class="card">
+              <img
+                src="./images/blog2.jpg"
+                class="card-img-top"
+                alt="블로그2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fs-4">블로그2</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-warning btn-sm">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg">
+            <div class="card">
+              <img
+                src="./images/blog3.jpg"
+                class="card-img-top"
+                alt="블로그3"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fs-4">블로그3</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-warning btn-sm">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg">
+            <div class="card">
+              <img
+                src="./images/blog4.jpg"
+                class="card-img-top"
+                alt="블로그4"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fs-4">블로그4</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-warning btn-sm">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--경험 끝-->
+
       <!--연락처 시작-->
-      <div id="contact"></div>
+      <div id="contact" class="bg-secondary-subtle">
+        <div class="container overflow-hidden py-5 text-center">
+          <div class="py-5">
+            <h1 class="fw-bold">CONTACT</1>
+            <p class="lead text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, cupiditate.
+            </p>
+          </div>
+          <div class="row py-5 gy-3">
+            <div class="col-md-4">
+              <div
+                class="shadow p-4 mb-5 border-bottom border-4 border-warning bg-light"
+              >
+                <i class="bi bi-envelope text-warning fs-5"></i>
+                <h4 class="fw-bold fs-5 py-2">이메일</h4>
+                <hr />
+                <p class="text-muted">contact@naver.com</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="shadow p-4 mb-5 border-bottom border-4 border-success bg-light"
+              >
+                <i class="bi bi-telephone-fill text-success fs-5"></i>
+                <h4 class="fw-bold fs-5 py-2">전화번호</h4>
+                <hr />
+                <p class="text-muted">010-000-0000</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="shadow p-4 mb-5 border-bottom border-4 border-warning bg-light"
+              >
+                <i class="bi bi-car-front-fill text-warning fs-5"></i>
+                <h4 class="fw-bold fs-5 py-2">주소</h4>
+                <hr />
+                <p class="text-muted text">성남시 중원구 아트펠리스</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--연락처 끝-->
-      <footer id="footer"></footer>
+      <!--푸터 시작-->
+      <footer id="footer" class="bg-dark text-white">
+        <div class="container text-center">
+          <p class="py-3 mb-0">
+            Copyright <i class="bi bi-c-circle"></i> 2024 Designed by
+            <a
+              href="https://github.com/jeeseulah"
+              target="_blank"
+              class="open-font link-warning text-decoration-none"
+              >Jee Seul Ah</a
+            >
+          </p>
+        </div>
+      </footer>
+      <!--푸터 끝-->
     </div>
     <!--부트스트랩-->
     <script
