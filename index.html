@@ -13,7 +13,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!--MY-->
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
   </head>
@@ -24,24 +27,22 @@
         id="home"
         class="d-flex flex-column vh-100 text-white justify-content-center align-items-center"
       >
-        <h1 class="display-3 fw-bold mb-3">JEE SEUL AH</h1>
-        <h4 class="fs-2 mb-5">Portfolio</h4>
-        <!--font size, margin_bottom-->
-        <!-- <p class="lead mb-5">Front-end Developer로서의 꿈을 키우고 있습니다.</p> -->
+        <h1 class="display-3 fw-bold mb-3 open-font">JEE SEUL AH</h1>
+        <h4 class="fs-2 mb-5 open-font">Portfolio</h4>
         <button
           class="btn btn-outline-warning rounded-pill"
           type="button"
           data-bs-toggle="modal"
-          data-bs-target="#bestmenuModal"
+          data-bs-target="#homeModal"
         >
-          최근 활동
+          최근 활동 보기
         </button>
         <!-- Modal -->
         <div
           class="modal fade"
-          id="bestmenuModal"
+          id="homeModal"
           tabindex="-1"
-          aria-labelledby="bestmenuModalLabel"
+          aria-labelledby="homeModalLabel"
           aria-hidden="true"
         >
           <div
@@ -51,9 +52,11 @@
               <div class="modal-header">
                 <h1
                   class="modal-title fs-5 text-dark fw-bold"
-                  id="bestmenuModalLabel"
+                  id="homeModalLabel"
                 >
-                  [2024.01. ~ 2024.06]
+                  [API 활용 자바(JAVA)웹 & 네이티브 앱 개발자] 6개월 과정
+                  수료<br />
+                  2024.01. ~ 2024.06
                 </h1>
                 <button
                   type="button"
@@ -65,21 +68,24 @@
               <div class="modal-body">
                 <ul class="text-muted lh-lg">
                   <li>
-                    최근 이젠아카데미 학원에서 [API 활용 자바(JAVA)웹 & 네이티브
-                    앱 개발자] 6개월 과정을 수료했습니다.
+                    이젠아카데미 국비지원학원에서 [API 활용 자바(JAVA)웹 &
+                    네이티브 앱 개발자] 6개월 과정 수료
                   </li>
                   <li>
                     HTML5, CSS, Javascript, Bootstrap, JQuery, React, Java,
-                    Spring, SpringBoot, MySQL, Thymeleaf 등을 배웠습니다.
+                    Spring, SpringBoot, MySQL, Thymeleaf 습득
                   </li>
                   <li>
-                    Figma를 활용하여 와이어프레임을 설계하고, 팀과의 소통에는
-                    Notion을 사용했습니다.
+                    Figma로 와이어프레임 설계 및 팀과의 communication시 Notion
+                    활용
                   </li>
-                  <li>
-                    현재는 정보처리기사와 웹디자인기능사 실기 시험 준비중입니다.
-                  </li>
+                  <li>정보처리기사, 웹디자인기능사 실기 시험 준비중</li>
                 </ul>
+                <img
+                  src="./images/ezenCertificate.jpg"
+                  alt="이젠수료증"
+                  class="img-fluid"
+                />
               </div>
             </div>
           </div>
@@ -106,22 +112,19 @@
 
           <div class="collapse navbar-collapse" id="nav-menu">
             <ul class="navbar-nav my-1">
-              <li class="nav-item me-5">
+              <li class="nav-item me-3">
                 <a class="nav-link open-font" href="#home">HOME</a>
               </li>
-              <li class="nav-item me-5">
+              <li class="nav-item me-3">
                 <a class="nav-link open-font" href="#about">ABOUT</a>
               </li>
-              <li class="nav-item me-5">
+              <li class="nav-item me-3">
                 <a class="nav-link open-font" href="#project">PROJECT</a>
               </li>
-              <li class="nav-item me-5">
+              <li class="nav-item me-3">
                 <a class="nav-link open-font" href="#career">CAREER</a>
               </li>
-              <li class="nav-item me-5">
-                <a class="nav-link open-font" href="#experience">EXPERIENCE</a>
-              </li>
-              <li class="nav-item me-5">
+              <li class="nav-item me-3">
                 <a class="nav-link open-font" href="#contact">CONTACT</a>
               </li>
             </ul>
@@ -132,13 +135,19 @@
       <!--슬아 소개 시작-->
       <div id="about" class="py-5">
         <!--소개-->
-        <section class="container-fluid pb-5 pt-3">
+        <section id="introduce" class="container pb-5 pt-3">
           <div class="text-center pb-5">
-            <h1 class="fw-bold">ABOUT</h1>
+            <h1 class="fw-bold gugi-font">ABOUT</h1>
+            <p class="text-muted">
+              안녕하세요. 새로운 기술을 배우고 문제를 해결하는 것을 즐기는
+              지슬아 입니다.
+              <br />
+              2024년 1월부터 Frontend Developer로서의 길을 걷기 위해
+              준비했습니다.
+            </p>
           </div>
-
           <div class="row justify-content-center align-items-center">
-            <div class="col-md-5 col-lg-4">
+            <div class="col-md-5">
               <img
                 src="./images/seulaImg1.jpg"
                 alt="지슬아 프로필 사진"
@@ -147,30 +156,21 @@
             </div>
             <div class="col-md-7 col-lg-5 gx-lg-5">
               <div class="pb-3 border-bottom">
-                <p class="fw-bold fs-3 mb-1">
-                  지슬아 <span class="fs-6">1991.11.26</span>
-                </p>
-                <p>
-                  안녕하세요.
-                  <br />
-                  새로운 기술을 배우고 문제를 해결하는 것을 즐기는 지슬아
-                  입니다.
-                  <br />
-                  2024년 1월부터 Frontend Developer로서의 길을 걷기 위해
-                  준비했습니다.
-                </p>
+                <h3 class="fw-bold display-6 mb-1">
+                  지슬아 <span class="fs-3">1991.11.26</span>
+                </h3>
               </div>
               <div class="py-3 border-bottom">
-                <p class="fw-bold fs-4 mb-0">EDUCATION</p>
+                <h4 class="fw-bold fs-4 mb-0 open-font">EDUCATION</h4>
                 <ul class="ps-0">
                   <li class="fw-bold">국립한경대학교</li>
                   <li>정보제어공학과 (2010년 입학 - 2014년 2월 졸업)</li>
                   <li class="fw-bold">숭신여자고등학교</li>
-                  <li>(2017년 입학 - 2010년 2월 졸업)</li>
+                  <li>(2007년 입학 - 2010년 2월 졸업)</li>
                 </ul>
               </div>
               <div class="pt-3">
-                <p class="fw-bold fs-4 mb-0">CERTIFICATE</p>
+                <h4 class="fw-bold fs-4 mb-0 open-font">CERTIFICATE</h4>
                 <ul class="ps-0">
                   <li>
                     웹디자인기능사 (필기합격)
@@ -190,9 +190,9 @@
           </div>
         </section>
         <!--스킬-->
-        <section class="container pb-5 text-center">
-          <h2 class="fw-bold">SKILLS ABILITY</h2>
-          <h3>Language/Framework/Library</h3>
+        <section id="skills" class="container text-center">
+          <h2 class="fw-bold open-font">SKILLS ABILITY</h2>
+          <h3 class="open-font">Language/Framework/Library</h3>
           <p>
             <img
               src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"
@@ -238,7 +238,7 @@
               src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
             />&nbsp
           </p>
-          <h3>Tools</h3>
+          <h3 class="open-font">Tools</h3>
           <p>
             <img
               src="https://img.shields.io/badge/Intellij IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white"
@@ -265,30 +265,1299 @@
       </div>
       <!--슬아 소개 끝-->
       <!--프로젝트 시작-->
-      <div id="project" class="bg-black py-5">
-        <div class="container overflow-hidden">
+      <section id="project" class="bg-black py-5">
+        <div class="container">
           <div class="text-center text-white py-5">
-            <h1 class="fw-bold mb-3">PROJECT</h1>
+            <h1 class="fw-bold mb-3 gugi-font">PROJECT</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, cumque.
+              팀 프로젝트나 개인 프로젝트로 제작한 프로젝트 모음집입니다. <br />
+              아래 페이지에서 상세 정보를 확인하실 수 있습니다.
             </p>
           </div>
           <div>
-            <div class="row pb-5 g-4">
-              <div class="col-6">
+            <div class="row pb-3 g-4">
+              <div class="col-12 col-md-6 overflow-hidden">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#puppyProjectModal"
+                >
+                  <img
+                    src="./images/dogether/mainImg.png"
+                    alt="함께하게 프로젝트 이미지"
+                    class="img-fluid rounded"
+                  />
+                </a>
+                <div class="mt-4">
+                  <p class="text-center text-light">
+                    팀프로젝트 2024.05.13 ~ 2024.06.07(4주)<br />작업인원 4명<br />
+                    HTML5, CSS, Jquery, Bootstrap, Thymeleaf,<br />
+                    Spring, Spring Boot, MySQL, JPA
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 overflow-hidden">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#movieProjectModal"
+                >
+                  <img
+                    src="./images/cinepedia/mainImg.png"
+                    alt="CINEPEDIA 프로젝트 이미지"
+                    class="img-fluid rounded"
+                  />
+                </a>
+                <div class="mt-4">
+                  <p class="text-center text-light">
+                    개인프로젝트 2024.06.18 ~ 2024.06.22(5일)<br />작업인원
+                    1명<br />
+                    HTML, CSS, Javascript, Bootstrap, Swiper
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 팀프로젝트 Modal -->
+      <div
+        class="modal fade"
+        id="puppyProjectModal"
+        tabindex="-1"
+        aria-labelledby="puppyProjectModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img
+                src="./images/dogether/logo.png"
+                class="img-fluid"
+                alt="CINEPEDIA"
+              />
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="닫기"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!--프로젝트 소개-->
+              <div>
+                <h6>반려동물 동반 문화시설 "함께하개"</h6>
+                <p class="text-muted">
+                  함께하개는 반려동물과 함께할 수 있는 다양한 문화시설을
+                  제공하고,<br />
+                  이를 통해 사람들이 반려동물과 함께 시간을 보내는 것을 즐길 수
+                  있도록 돕는 것을 목표로 합니다.<br />
+                  이를 위해, 우리는 반려동물이 동반 가능한 카페, 병원, 약국 등
+                  다양한 시설에 대한 정보를 제공하고 있습니다.<br /><br />
+
+                  공공데이터 포털 반려동물 동반가능 문화시설의 Open API를
+                  바탕으로 만들었습니다
+                </p>
+                <br />
+                <h6>함께하개 발표 ppt자료</h6>
+                <a href="./images/dogether/함께하개발표자료.pdf" download>
+                  >> 이젠팀프로젝트_2조함께하개_240617.pdf</a
+                >
+              </div>
+              <!--프로젝트 작업환경-->
+              <div class="py-5">
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">SKILLS</div>
+                  <div class="w-75">
+                    <img
+                      src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/JQuery-0769AD?style=flat-square&logo=jquery&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=thymeleaf&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=springboot&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">TOOLS</div>
+                  <div class="w-75">
+                    <img
+                      src="https://img.shields.io/badge/Intellij IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/MySQL%20Workbench-4479A1?style=flat-square&logo=mysqlworkbench&logoColor=white"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">진행기간</div>
+                  <div class="w-75">2024.05.13 ~ 2024.06.07</div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">개발인원</div>
+                  <div class="w-75">4명</div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">역할</div>
+                  <div class="w-75">
+                    <span class="badge text-bg-warning">기획</span>
+                    <span class="badge text-bg-success">프론트엔드</span>
+                    <span class="badge text-bg-primary">백엔드</span>
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">기여도</div>
+                  <div class="w-75">3/5</div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">API</div>
+                  <div class="w-75">
+                    Place Photo API (업체 사진), Google 지도 API, 공공데이터포털
+                    반려동물 문화시설 API
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">사이트</div>
+                  <div class="w-75">
+                    <a href="http://3.39.175.36:8080/"
+                      >http://3.39.175.36:8080</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!--접속QR-->
+              <div class="pb-5 border-bottom">
+                <h6>함께하개 접속 QR</h6>
                 <img
-                  src="./images/portfolio1.jpg"
-                  alt="포트폴리오사진1"
-                  class="img-fluid img-thumbnail"
+                  src="./images/dogether/함께하개접속QR.png"
+                  alt="함께하개접속QR"
+                  class="img-fluid"
                 />
               </div>
-              <div class="col-6">
+              <!--팀원소개-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">팀원 소개 & 역할 분담</h3>
+                <p>
+                  2조 퍼피코더스👣입니다.<br />
+                  "퍼피(Puppy)"는 영어로 강아지를 뜻하며, "코더스(Coders)"는
+                  개발자를 의미합니다. "강아지 코더들"을 의미하는 뜻으로
+                  "함께하개" 주제와 맞는 팀명을 짓게 되었습니다.
+                </p>
                 <img
-                  src="./images/portfolio2.jpg"
-                  alt="포트폴리오사진2"
-                  class="img-fluid img-thumbnail"
+                  src="./images/dogether/함께하개역할분담.png"
+                  alt="함께하개역할분담"
+                  class="img-fluid"
                 />
+              </div>
+              <!--기능소개-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">기능 소개</h3>
+                <div>
+                  <h5 class="fw-bold">1. 반응형 웹 페이지</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/반응형.gif"
+                      alt="반응형이미지"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        반응형 웹 페이지를 만들기 위해 Bootstrap을 사용했습니다.
+                      </li>
+                      <li>
+                        데스크톱 컴퓨터, 테블릿, 스마트폰 등 다양한 환경에서
+                        이용가능 합니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">2. 로그인 페이지</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/로그인.gif"
+                      alt="로그인"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        ID와 비밀번호 입력 없이 로그인 시도 시 입력해야 한다는
+                        메시지가 표시됩니다.
+                      </li>
+                      <li>
+                        아이디와 비밀번호가 일치하지 않을 경우에도 메시지가
+                        표시됩니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">3. 회원가입 페이지</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/회원가입.gif"
+                      alt="회원가입"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>아이디는 이메일로 회원가입이 되도록 했습니다.</li>
+                      <li>
+                        중복 확인 기능을 넣어 기존에 동일한 ID가 있으면 가입이
+                        되지 않도록 했습니다.
+                      </li>
+                      <li>
+                        개인정보처리방침에 체크해야 회원가입이 완료됩니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">4. 반려동반 문화 시설 검색</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/병원지역검색.gif"
+                      alt="병원지역검색"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        시도, 시군구, 동읍면 을 선택하면 그 지역의 병원 목록이
+                        하단에 나타납니다.
+                      </li>
+                      <li>
+                        해당 병원을 클릭하면 지도에 위치가 표시되고 업체 정보가
+                        업체 사진과 함께 상단에 나타납니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">5. 다이어리 페이지</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/다이어리.gif"
+                      alt="다이어리"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <li>
+                      <ul>
+                        반려견에 대한 다이어리를 작성할 수 있습니다.
+                      </ul>
+                    </li>
+                  </div>
+                  <h5 class="fw-bold">6. 펫 프로필 등록 페이지</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/펫프로필.gif"
+                      alt="펫프로필"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>반려견에 대한 프로필을 등록 할 수 있습니다.</li>
+                      <li>파일을 선택하여 반려견 이미지도 등록 가능 합니다.</li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">7. 내정보 페이지</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/내정보.gif"
+                      alt="내정보"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        로그인된 id 정보를 불러와 작성한글, 문의내역, 다이어리에
+                        내용을 표시해 줍니다.
+                      </li>
+                      <li>포인트, 쿠폰 목록은 기능 구현 되지 않았습니다.</li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">8. 공지사항 페이지</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/공지사항.gif"
+                      alt="공지사항"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>회원은 글 등록 버튼이 없습니다.</li>
+                      <li>관리자 ID로 접속해야 공지글을 작성할 수 있습니다.</li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">9. 게시판 글작성</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/게시판글작성.gif"
+                      alt="게시판글작성"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>게시판 글을 작성하려면 로그인이 필요합니다.</li>
+                      <li>
+                        글 작성 페이지로 이동하면 자동으로 로그인 정보가
+                        불러와집니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">10. 게시판 댓글등록</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/게시판댓글등록.gif"
+                      alt="게시판댓글등록"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>로그인한 아이디로 댓글을 등록할 수 있습니다.</li>
+                      <li>댓글 목록에는 작성자 이름과 날짜가 표시됩니다.</li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">11. 검색기능</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/검색기능.gif"
+                      alt="검색기능"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        공지사항, 게시판, 그리고 Q&A 페이지에서 각각 게시글을
+                        검색할 수 있습니다.
+                      </li>
+                      <li>제목, 내용, 작성자로 검색이 가능합니다.</li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">12. Q&A 글작성</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/Q&A비밀번호.gif"
+                      alt="Q&A비밀번호"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>Q&A 글을 작성하려면 로그인이 필요합니다.</li>
+                      <li>
+                        Q&A 글 작성 페이지로 이동하면 자동으로 로그인 정보가
+                        불러와집니다.
+                      </li>
+                      <li>
+                        비밀글로 등록하려면 비밀글 체크박스를 선택할 수
+                        있습니다.
+                      </li>
+                      <li>
+                        비밀글 체크박스를 선택하면 비밀번호란이 활성화 됩니다.
+                      </li>
+                      <li>비밀번호 없이 글등록 시 메시지가 발생합니다.</li>
+                      <li>개인정보처리방침에 동의해야 글 등록이 가능합니다.</li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">12. Q&A 답변등록 상태 변경</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/Q&A답변등록상태변경.gif"
+                      alt="Q&A답변등록상태변경"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <li>Q&A글에 대한 답변은 관리자만 가능합니다.</li>
+                    <li>
+                      답변이 완료 된 후에는 미답변에서 답변완료로 글
+                      상태가변경됩니다.
+                    </li>
+                  </div>
+                  <h5 class="fw-bold">12. Q&A 비밀글</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/Q&A비밀글.gif"
+                      alt="Q&A비밀글"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        비밀글로 된 글을 조회할 경우 비밀번호 입력창이
+                        나타납니다.
+                      </li>
+                      <li>
+                        비밀글 작성자 ID와 현재 로그인된 ID가 동일할 시에만
+                        나타납니다.
+                      </li>
+                      <li>
+                        동일하지 않을 경우 "비공개글 입니다" 메시지가
+                        표시됩니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--작업과정-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">작업 과정</h3>
+                <div>
+                  <h5 class="fw-bold">1. 클래스 다이어그램</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/함께하개클래스다이어그램.png"
+                      alt="함께하개클래스다이어그램"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <h5 class="fw-bold">2. 와이어프레임 작성 (피그마)</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/함께하개와이어프레임.png"
+                      alt="함께하개와이어프레임"
+                      class="img-fluid"
+                    />
+                    <a
+                      href="https://www.figma.com/design/pQOygJkjMHU3DFu6aJynLU/%EC%9D%B4%EC%A0%A0%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-(%ED%95%A8%EA%BB%98%ED%95%98%EA%B0%9C_%EC%A7%80%EC%8A%AC%EC%95%84)?node-id=0-1&t=uJu0jVHhy7kGGIva-0"
+                      target="_blank"
+                      style="color: blue"
+                    >
+                      >> 피그마링크</a
+                    >
+                    <ul>
+                      <li>피그마를 이용해 와이어프레임을 제작했습니다.</li>
+                      <li>
+                        반응형 페이지를 위해 lg, md, sm 사이즈로 제작했습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">3. 기능 명세서 작성</h5>
+                  <div>
+                    <img
+                      src="./images/dogether/함께하개기능명세서.png"
+                      alt="함께하개기능명세서"
+                      class="img-fluid"
+                    />
+                    <a
+                      href="https://www.notion.so/dogether/1f96dcbf76b444c1bb1f88b5569223ec"
+                      target="_blank"
+                      style="color: blue"
+                    >
+                      >> 기능명세링크</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!--핵심코드-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">
+                  제가 담당했던 기능에 대한 핵심 코드입니다
+                </h3>
+                <details>
+                  <summary>로그인 상태변화</summary>
+                  <img
+                    src="./images/dogether/로그인상태변화.png"
+                    alt="로그인상태변화"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>내정보 페이지 구현</summary>
+                  <img
+                    src="./images/dogether/내정보페이지구현.png"
+                    alt="내정보페이지구현"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>공통 레이아웃</summary>
+                  <img
+                    src="./images/dogether/공통레이아웃.png"
+                    alt="공통레이아웃"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>공통 프라그먼트</summary>
+                  <img
+                    src="./images/dogether/프라그먼트1.png"
+                    alt="프라그먼트"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./images/dogether/프라그먼트2.png"
+                    alt="프라그먼트"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>paging 기능</summary>
+                  <img
+                    src="./images/dogether/paging기능.png"
+                    alt="paging기능"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>조회수 기능(게시판 페이지)</summary>
+                  <img
+                    src="./images/dogether/조회수기능.png"
+                    alt="조회수기능"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>댓글 수 확인 기능(게시판 페이지)</summary>
+                  <img
+                    src="./images/dogether/댓글수확인.png"
+                    alt="댓글수확인"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>이전글 다음글 기능(게시판 페이지)</summary>
+                  <img
+                    src="./images/dogether/이전글다음글.png"
+                    alt="이전글다음글"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>비밀글 조회 기능(Q&A 페이지)</summary>
+                  <img
+                    src="./images/dogether/비밀글조회1.png"
+                    alt="비밀글조회"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="./images/dogether/비밀글조회2.png"
+                    alt="비밀글조회"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>비공개글 & 답변완료표시 기능(Q&A 페이지)</summary>
+                  <img
+                    src="./images/dogether/비공개글답변완료표시.png"
+                    alt="비공개글답변완료표시"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>댓글 수정 기능(Q&A 페이지)</summary>
+                  <img
+                    src="./images/dogether/댓글수정기능.png"
+                    alt="댓글수정기능"
+                    class="img-fluid"
+                  />
+                </details>
+              </div>
+              <!--보완해야 할 부분-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">보완해야 할 부분</h3>
+                <ul>
+                  <li>페이지 이동 시 nav bar 항상 표시되도록 변경합니다.</li>
+                  <li>
+                    메인페이지에서 업체이미지가 없을 경우 기본이미지가 자동으로
+                    표시되도록 수정합니다.
+                  </li>
+                  <li>
+                    지역 검색 시 시/군/구를 변경하더라도 검색이 가능하도록 전체
+                    지역 검색 기능을 구현합니다.
+                  </li>
+                  <li>
+                    지도에 한번 표시된 지점이 자동으로 사라지도록 조치합니다.
+                  </li>
+                  <li>다이어리에는 수정 기능이 추가되어 있지 않습니다.</li>
+                  <li>다이어리를 작성한 시간을 확인할 수 없도록 설정합니다.</li>
+                  <li>펫을 등록한 후에도 수정할 수 있는 기능을 추가합니다.</li>
+                  <li>등록한 펫으로 다이어리를 작성할 수 있도록 설정합니다.</li>
+                  <li>
+                    캘린더 기능을 추가하여 건강 검진일을 손쉽게 추가할 수 있도록
+                    구현합니다.
+                  </li>
+                </ul>
+              </div>
+              <!--느낀점-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">느낀점</h3>
+                <p>
+                  첫 수업을 들었을 때의 서먹서먹했던 때가 엊그제 같은데, 벌써
+                  6개월이라는 시간이 지나 팀프로젝트를 마무리 하기 까지 아직도
+                  믿기지 않습니다.<br />
+                  개발자로 걸어가기 위해 준비하고 팀프로젝트를 진행하며,
+                  처음으로 깃 사용법을 배우고 Notion을 활용해 보는 등 많은
+                  새로움이 있었습니다. 부족한 점도 많았지만, 묵묵히 따라와 주는
+                  팀원들에게 큰 감사를 전합니다.<br />
+                  그 덕분에 우리는 처음 목표했던 결과물을 차근차근 쌓아 올려 또
+                  하나의 기억 조각을 만들 수 있었습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 개인프로젝트 Modal -->
+      <div
+        class="modal fade"
+        id="movieProjectModal"
+        tabindex="-1"
+        aria-labelledby="movieProjectModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img
+                src="./images/cinepedia/logo.png"
+                class="img-fluid"
+                alt="CINEPEDIA"
+              />
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="닫기"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!--프로젝트 소개-->
+              <div>
+                <h6>영화에 대한 정보를 제공하는 플랫폼 "CinePedia"</h6>
+                <p class="text-muted">
+                  "CinePedia"는 영화를 뜻하는 라틴어 "Cine"와 백과사전을
+                  의미하는 그리스어 "pedia"에서 영감을 받아 만들어진
+                  이름입니다.<br />
+                  다양한 문화와 장르의 영화들을 통해 새로운 시각을 얻고, 영화에
+                  대한 이해와 흥미를 넓힐 수 있는 공간입니다.<br />
+                  함께 CINEPEDIA에서 영화의 멋진 세계를 탐험해보세요!<br /><br />
+
+                  “CinePedia”는 현재상영 및 상영예정작, 역대영화 순위,
+                  영화관련영상 등 영화에 대한 다양한 정보를 제공하고 있습니다.
+                </p>
+              </div>
+              <!--프로젝트 작업환경-->
+              <div class="py-5">
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">SKILLS</div>
+                  <div class="w-75">
+                    <img
+                      src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Javascript-ffb13b?style=flat-square&logo=javascript&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">TOOLS</div>
+                  <div class="w-75">
+                    <img
+                      src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">진행기간</div>
+                  <div class="w-75">2024.06.18 ~ 2024.06.22</div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">개발인원</div>
+                  <div class="w-75">1명</div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">역할</div>
+                  <div class="w-75">
+                    <span class="badge text-bg-warning">기획</span>
+                    <span class="badge text-bg-success">개발</span>
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">기여도</div>
+                  <div class="w-75">5/5</div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">API</div>
+                  <div class="w-75">
+                    영화 정보 공유사이트 TMDB Open API 활용
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div class="fw-bold" style="width: 80px">사이트</div>
+                  <div class="w-75">
+                    <a href="https://jeeseulah.github.io/CINEPEDIA/"
+                      >https://jeeseulah.github.io/CINEPEDIA</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!--접속QR-->
+              <div class="pb-5 border-bottom">
+                <h6>CINEPEDIA 접속 QR</h6>
+                <img
+                  src="./images/cinepedia/영화접속QR.png"
+                  alt="영화접속QR"
+                  class="img-fluid"
+                />
+              </div>
+              <!--기능소개-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">기능</h3>
+                <div>
+                  <h5 class="fw-bold">1. 반응형 웹 페이지</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/반응형2.gif"
+                      alt="반응형이미지"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        반응형 웹 페이지를 만들기 위해 Bootstrap을 사용했습니다.
+                      </li>
+                      <li>
+                        데스크톱 컴퓨터, 테블릿, 스마트폰 등 다양한 환경에서
+                        이용가능 합니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">2. Swiper 사용</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/메인슬라이드.gif"
+                      alt="메인슬라이드"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>인기영화의 Top5만 나타나게 하였습니다.</li>
+                      <li>Swiper의 종류 중 Coverflow Effect를 사용했습니다.</li>
+                      <li>
+                        마우스를 올리면 슬라이드가 멈추도록 설정되어 있습니다.
+                      </li>
+                      <li>
+                        영화 포스터 위에 영화 제목을 표시하고, 포스터가 흰
+                        배경인 경우를 고려하여 text에 shadow 효과를
+                        추가했습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <img
+                      src="./images/cinepedia/영화리스트스와이퍼2.gif"
+                      alt="메인스와이퍼"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        메인 페이지에는 Swiper Pagination을 사용하여 마우스를
+                        올리면 화살표 버튼이 나타납니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <img
+                      src="./images/cinepedia/영화리스트스와이퍼1.gif"
+                      alt="메인스와이퍼"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        영화 상세 페이지에는 Swiper Scrollbar를 사용하여 마우스
+                        드래그를 통해 슬라이드를 이동할 수 있도록 했습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">3. 영화 순위 보여주기</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/영화리스트스와이퍼2.gif"
+                      alt="메인스와이퍼"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        forEach의 index를 사용하여 영화 poster card 상단에
+                        순위가 표시되도록 했습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">4. 영화 카드 MouseOver 효과</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/이미지가 없을 경우.png"
+                      alt="영화이미지 없을 경우"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        영화 poster 이미지가 없는 경우 맨왼쪽 이미지와 같이 기본
+                        이미지가 나타납니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <img
+                      src="./images/cinepedia/영화카드마우스오버.gif"
+                      alt="영화카드마우스오버"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        영화 poster card에 마우스를 올리면 해당 영화의 별점과
+                        간단한 설명이 나타납니다.
+                      </li>
+                      <li>설명이 길 경우를 고려해 말줄임표로 표시했습니다.</li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">5. 별점 표시, 공유 기능</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/공유기능.gif"
+                      alt="공유기능"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        영화 제목 상단에 해당 영화의 평점을 불러와 별 모양으로
+                        표시하도록 구현했습니다.
+                      </li>
+                      <ul>
+                        <li>
+                          평점은 10점 만점의 값으로 되어 있기 때문에 평점을 2로
+                          나눈 값으로 표시했습니다.
+                        </li>
+                      </ul>
+                      <li>
+                        <code>window.navigator.share()</code>를 이용하여 공유
+                        버튼을 클릭하면 해당 주소를 공유할 수 있도록 했습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">6. 더보기 기능</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/더보기기능.gif"
+                      alt="더보기기능"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        영화에 대한 소개글이 길 경우 css를 이용해 말 줄임표로
+                        표시하고, "더보기" 버튼을 클릭하면 전체 내용이
+                        나타나도록 구현했습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">7. 트레일러 영상 보기</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/트레일러.gif"
+                      alt="트레일러"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        해당 영화의 트레일러 영상을 영화 상세 설명 하단에 바로
+                        시청할 수 있도록 구현했습니다.
+                      </li>
+                      <li>
+                        트레일러 영상이 없을 경우에는 "영상이 아직 등록되지
+                        않았습니다" 메시지가 나타납니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">8. 위로 scroll 기능</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/위로화살표.gif"
+                      alt="위로화살표"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        페이지 오른쪽 하단에 보이는 위로 화살표 모양을 클릭하면
+                        페이지 상단으로 이동합니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">9. 최근 검색어 저장</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/검색기능.gif"
+                      alt="검색기능"
+                      loop="infinite"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        이전에 검색된 내용이 없으면 "검색 내역이 없습니다"라고
+                        표시됩니다.
+                      </li>
+                      <li>
+                        검색할 때마다 localStorage에 검색 값이 배열로
+                        저장됩니다.
+                      </li>
+                      <li>
+                        검색내용을 개별적으로 삭제하거나 모두 한 번에 삭제할 수
+                        있습니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--작업과정-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">작업 과정</h3>
+                <div>
+                  <h5 class="fw-bold">1. 로고 제작</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/영화로고제작.png"
+                      alt="영화로고제작"
+                      class="img-fluid"
+                    />
+                    <ul>
+                      <li>
+                        로고 제작 하는 과정에서 폰트 선택과 디자인에 대하여
+                        고민하였습니다. 복잡하지 않고 간결하며, 쉽게 인식할 수
+                        있는 폰트를 선택했습니다. 디자인은 영화 프레임을
+                        상상하며 사각형 프레임 안에 문구를 배치하였습니다.
+                      </li>
+                      <li>
+                        Blanka 글꼴을 선택하고, 포토샵에서 gradient 효과를
+                        적용하여 색상을 설정했습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">2. 와이어프레임 작성 (피그마)</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/영화와이어프레임.png"
+                      alt="영화와이어프레임"
+                      class="img-fluid"
+                    />
+                    <a
+                      href="https://www.figma.com/design/QUV9hKMmLmIsgLklpzFiMl/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8(%EC%98%81%ED%99%94%EC%A1%B0%ED%9A%8C)?t=iKS43h3lvaFL3k92-0"
+                      target="_blank"
+                      style="color: blue"
+                    >
+                      >> 피그마링크</a
+                    >
+                    <ul>
+                      <li>피그마를 이용해 와이어프레임을 제작했습니다.</li>
+                      <li>
+                        반응형 페이지를 위해 lg, md, sm 사이즈로 제작했습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <h5 class="fw-bold">3. 기능 명세서 작성</h5>
+                  <div>
+                    <img
+                      src="./images/cinepedia/영화기능명세서.png"
+                      alt="영화기능명세서"
+                      class="img-fluid"
+                    />
+                    <a
+                      href="https://www.notion.so/ba42f3a137824a1a92488ec9e49a56e2?pvs=4"
+                      target="_blank"
+                      style="color: blue"
+                    >
+                      >> 기능명세링크</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!--핵심코드-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">핵심 코드</h3>
+                <details>
+                  <summary>주어진 API에서 데이터 가져오기</summary>
+                  <ul>
+                    <li>
+                      TMDB API는 movieChart, nowPlaying, upComing, top20의
+                      리스트 유형이 각각 다른 URL값을 요구합니다. 이에 따라
+                      "listType"을 설정하여 switch문을 통해 해당 API를 가져올 수
+                      있도록 구현했습니다.
+                    </li>
+                  </ul>
+                  <img
+                    src="./images/cinepedia/핵심코드1.png"
+                    alt="핵심코드"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>공유하기 기능 구현하기</summary>
+                  <ul>
+                    <li>
+                      "공유하기" 버튼을 클릭했을 때, 사용자의 브라우저가 공유
+                      기능을 지원 하는 경우 해당 영화 정보를 공유할 수 있도록
+                      구현했습니다.
+                    </li>
+                    <li>
+                      <code>window.navigator.share()</code>메서드를 사용하여 웹
+                      플랫폼의 공유 기능을 호출합니다. 이 메서드는 사용자가
+                      선택한 공유 대상에 따라 텍스트, 제목, url을 포함하여
+                      데이터를 공유합니다.
+                    </li>
+                    <li>
+                      url에는 <code>window.location.href</code>로 설정하여 현재
+                      페이지를 공유 url로 설정했습니다.
+                    </li>
+                  </ul>
+                  <img
+                    src="./images/cinepedia/핵심코드2.png"
+                    alt="핵심코드"
+                    class="img-fluid"
+                  />
+                </details>
+                <details>
+                  <summary>별점 표시 기능 구현하기</summary>
+                  <ul>
+                    <li>
+                      영화 데이터에서 받아온 <code>vote_average</code>(평점)
+                      값을 기반으로 별점을 시각적으로 표현하는 HTML 문자열을
+                      생성하는 코드 입니다.
+                    </li>
+                    <ul>
+                      <li>
+                        <code>vote_average</code> : 영화의 평점을 10점 만점에서
+                        받아왔으며, 이를 5점 만점으로 변환하기 위해 2로
+                        나누어<code>vote_average</code>에 저장합니다.
+                      </li>
+                      <li>
+                        <code>vote_average_remain</code> : 반별을 표시하기
+                        위해<code>vote_average</code>에서 정수 부분을 뺀 나머지
+                        값을 계산 했습니다.
+                      </li>
+                    </ul>
+                    <li>반복문을 통해 총 5개의 별 아이콘을 생성합니다.</li>
+                    <ul>
+                      <li>
+                        <code>Math.floor(vote_average)</code> :
+                        <code>vote_average</code>의 정수 부분만큼 꽉찬별
+                        아이콘을 추가합니다.
+                      </li>
+                      <li>
+                        <code>vote_average_remain >= 0.5</code> : 평점 0.5
+                        이상인 경우 반복문의 현재 위치에 반별 아이콘을
+                        추가합니다.
+                      </li>
+                      <li>그 외의 경우에는 빈별 아이콘을 추가합니다.</li>
+                    </ul>
+                    <img
+                      src="./images/cinepedia/핵심코드3.png"
+                      alt="핵심코드"
+                      class="img-fluid"
+                    />
+                  </ul>
+                </details>
+                <details>
+                  <summary>최근검색어 기능 구현하기</summary>
+                  <details>
+                    <summary>검색버튼 event시 값 전달</summary>
+                    <ul>
+                      <li>
+                        검색 기능을 키보드의 "Enter" 키와 마우스 "click"으로
+                        모두 실행할 수 있도록, 이벤트리스너를 "click"이 아닌
+                        Form태그를 사용하여 "submit"을 사용하는 방식으로
+                        구현했습니다.
+                      </li>
+                      <li>
+                        <code>e.preventDefault();</code> : 이벤트 객체(e)의 기본
+                        동작을 취소합니다. form이 submit됐을 때 페이지가
+                        리로드되는 동작을 막습니다.
+                      </li>
+                      <li>
+                        <code>initMovieSearchPage(searchValue);</code> :
+                        <code>initMovieSearchPage</code>함수를 호출하여 검색된
+                        영화의 결과를 표시하도록 했습니다.
+                      </li>
+                      <li>
+                        <code>addKeyword(searchValue);</code> :
+                        <code>addKeyword</code>함수를 호출하여 최근 검색어
+                        목록에 검색어를 추가합니다.
+                      </li>
+                    </ul>
+                    <img
+                      src="./images/cinepedia/핵심코드4.png"
+                      alt="핵심코드"
+                      class="img-fluid"
+                    />
+                  </details>
+                  <details>
+                    <summary>새로운 검색어 로컬에 저장</summary>
+                    <ul>
+                      <li>
+                        사용자가 입력한 검색어를 최근 검색어 목록에 추가하는
+                        기능을 수행합니다.
+                      </li>
+                      <li>
+                        <code>getItem()</code>메서드의 반환 값이 null인 경우를
+                        대비해<code>|| "[]"</code>를 사용하여,
+                        <code>keywords</code>데이터가 존재하지 않을 때에는 빈
+                        배열(<code>[]</code>)을 기본값으로 설정합니다.
+                      </li>
+                      <li>
+                        새로운 검색어 객체(<code>newKeyword</code>)를 기존의
+                        검색어 배열(<code>keywords</code>)의 앞에 추가하여,
+                        업데이트 된 최근 검색어 목록을 만듭니다.
+                      </li>
+                      <li>
+                        <code>JSON.stringify()</code>를 사용하여 배열을
+                        JSON문자열로 변환하여 localStorage에 저장합니다.>
+                      </li>
+                      <li>
+                        이렇게 함으로써 최근 검색어 목록이 계속해서 유지되며,
+                        다음 검색 시에도 이 목록에 새로운 검색어가 추가 됩니다.
+                      </li>
+                    </ul>
+                    <img
+                      src="./images/cinepedia/핵심코드5.png"
+                      alt="핵심코드"
+                      class="img-fluid"
+                    />
+                  </details>
+                  <details>
+                    <summary>최근 검색어 표시하기</summary>
+                    <ul>
+                      <li>
+                        최근 검색어 목록을 localStorage에서 가져와서 화면에
+                        출력하는 기능을 구현한 부분입니다.
+                      </li>
+                      <li>
+                        <code>searchListContainer.innerHTML = "";</code>: 검색어
+                        목록을 출력하는 내용을 초기화합니다. 단일 검색어 삭제 후
+                        목록을 업데이트 할 때 사용됩니다.
+                      </li>
+                      <li>
+                        검색어 목록이 없을 경우를 대비해 HTML에 안내문구를
+                        표시하기 위해서<code>if (keywordsList.length > 0)</code
+                        >을 사용하였습니다.
+                      </li>
+                      <li>
+                        <code>onclick="deleteKeyword(${element.id})"</code>
+                        : 해당 검색어 삭제를 위해 추가했습니다.
+                      </li>
+                    </ul>
+                    <img
+                      src="./images/cinepedia/핵심코드6.png"
+                      alt="핵심코드"
+                      class="img-fluid"
+                    />
+                  </details>
+                  <details>
+                    <summary>최근 검색어 모두 삭제</summary>
+                    <ul>
+                      <li>
+                        <code>localStorage.clear();</code>: locaStorage에서 모든
+                        데이터를 삭제합니다.
+                      </li>
+                      <li>
+                        <code>getKeyword();</code> : 모든 검색어 초기화 후 HTML
+                        화면을 update하기 위해 함수를 다시 불러옵니다.
+                      </li>
+                    </ul>
+                    <img
+                      src="./images/cinepedia/핵심코드7.png"
+                      alt="핵심코드"
+                      class="img-fluid"
+                    />
+                  </details>
+                  <details>
+                    <summary>최근 검색어 단일 삭제</summary>
+                    <ul>
+                      <li>해당 검색어를 삭제하는 기능을 구현한 부분입니다.</li>
+                      <li>
+                        <code
+                          >let updatedKeywords = keywords.filter((keyword) =>
+                          keyword.id !== id);</code
+                        >
+                        : <code>filter()</code>메서드를 사용하여 검색어 목록
+                        배열에서 삭제할 검색어를 제외한 모든 검색어만 남기고
+                        새로운 배열을 생성합니다.
+                      </li>
+                    </ul>
+                    <img
+                      src="./images/cinepedia/핵심코드8.png"
+                      alt="핵심코드"
+                      class="img-fluid"
+                    />
+                  </details>
+                </details>
+              </div>
+              <!--보완해야 할 부분-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">보완해야 할 부분</h3>
+                <ul>
+                  <li>
+                    검색 결과가 없는 경우에는 해당하는 결과가 없다는 안내
+                    메시지가 표시되는 기능
+                  </li>
+                  <li>
+                    최근 검색어를 클릭하면 해당 검색어로 바로 검색되는 기능
+                  </li>
+                  <li>배우 프로필 페이지 만들기</li>
+                  <li>
+                    검색 시 키보드 키를 누를 때마다 검색 결과가 실시간으로
+                    나타나도록 설정하는 기능
+                  </li>
+                  <li>
+                    TMDB에서 불러오는 upComing list에는 이미 개봉한 영화도
+                    포함되어 있습니다. 따라서 release date를 기준으로 상영 예정
+                    작품만 필터링하여 불러오도록 수정이 필요합니다.
+                  </li>
+                </ul>
+              </div>
+              <!--느낀점-->
+              <div class="py-5 border-bottom">
+                <h3 class="fw-bold">느낀점</h3>
+                <p>
+                  처음으로 진행한 개인프로젝트 였습니다.<br />
+                  초반에는 막막했지만, 계획을 세우고 점진적으로 진행해
+                  나감으로써, 한 발 한 발씩 완성점을 찍어나가는 과정에서 큰
+                  성취감을 느낄 수 있었습니다. 프로젝트를 완성한 후에는 더욱
+                  뿌듯함을 느꼈습니다.<br />
+                  특히 영화 사이트의 이름을 정하고 로고를 디자인하며
+                  상세페이지를 구현하는 과정에서, 각각의 작은 세부 사항에 제
+                  손길이 닿았다는 점이 매우 의미 있었습니다. 그것들이 모여서
+                  완성된 결과물을 보면서, 제가 직접 만든 것이라는 자부심과 함께
+                  더욱 소중하게 느껴졌습니다.<br />
+                  이 경험은 저에게 개인적인 성장과 함께, 문제 해결 능력을 키우는
+                  데 큰 도움이 되었습니다. 앞으로도 이런 경험을 통해 더 많은
+                  도전을 극복하고 발전해 나가고자 합니다.
+                </p>
               </div>
             </div>
           </div>
@@ -296,213 +1565,425 @@
       </div>
       <!--프로젝트 끝-->
       <!--경력 시작-->
-      <div id="career" class="container overflow-hidden py-5">
+      <section id="career" class="container overflow-hidden py-5">
         <div class="py-5 text-center">
-          <h1 class="fw-bold mb-3">CAREER</h1>
-          <p class="lead text-muted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            cupiditate.
+          <h1 class="fw-bold mb-3 gugi-font">CAREER</h1>
+          <p class="text-muted">
+            2014.01부터 2023.06까지 <br />반도체 분야 9년 5개월 경력의
+            선임연구원으로서<br />
+            (주)에이디테크놀로지와 라온피플주식회사에서 근무했습니다.
           </p>
         </div>
         <div>
           <div class="row mb-5 g-4">
             <div class="col-md-6">
-              <div class="card-hover shadow p-4 rounded">
-                <div class="d-flex align-items-center py-3">
-                  <img
-                    src="./images/service1.jpg"
-                    alt="서비스1"
-                    class="rounded-circle"
-                  />
-                  <div class="ms-3">
-                    <h3 class="fw-bold">에이디테크놀로지</h3>
-                    <p class="lead text-muted fs-5">
-                      Lorem ipsum dolor sit amet.
-                    </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#ADTModal">
+                <div class="card-hover shadow p-4 rounded">
+                  <div class="row d-flex align-items-center py-3">
+                    <div class="col-4">
+                      <img
+                        src="./images/ADTechnologyLogo.png"
+                        alt="에이디테크놀로지로고"
+                        class="rounded-circle img-fluid"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h3 class="fw-bold fs-3">에이디테크놀로지</h3>
+                      <h4 class="text-muted fs-5">
+                        Design Platform팀<br />선임연구원<br />
+                        <small>2018.02 ~ 2023.06 (5년 5개월)</small>
+                      </h4>
+                    </div>
                   </div>
+                  <p>
+                    에이디테크놀로지(ADTechnology)는 반도체 및 전자 제품 개발
+                    기업입니다. 주로 고성능 반도체 솔루션을 제공하며, 다양한
+                    산업 분야에서의 응용에 중점을 두고 있습니다.<br />
+                  </p>
+                  <!-- <div class="ps-3">
+                  <p class="mb-0 fw-bold">경력요약</p>
+                  <ol>
+                    <li>CPU Based IP Verification</li>
+                    <ul><li>GLS Verification, SDF annotation후 Timing Verification</li></ul>
+                    <li>Interface검증을 위한 Testbench 구현</li>
+                    <li>Test Vector Generation (VTRAN사용)</li>
+                    <li>Clock Tree, Clock Path latency file 작성</li>
+                    <li>검증 Check list 작성</li>
+                    <li>개발, 검증과정에서 Jira협업 툴 사용</li>
+                  </ol>
+                </div> -->
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                  molestiae laboriosam vel corporis at deserunt facere! Libero
-                  sunt a suscipit iusto accusantium, recusandae laborum sed!
-                </p>
-              </div>
+              </a>
             </div>
             <div class="col-md-6">
-              <div class="card-hover shadow p-4 rounded">
-                <div class="d-flex align-items-center py-3 justify-content-end">
-                  <div class="me-3 text-end">
-                    <h3 class="fw-bold">라온피플</h3>
-                    <p class="lead text-muted fs-5">
-                      Lorem ipsum dolor sit amet.
-                    </p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#LAONModal">
+                <div class="card-hover shadow p-4 rounded">
+                  <div
+                    class="row d-flex align-items-center py-3 justify-content-end"
+                  >
+                    <div class="col-8 text-end">
+                      <h3 class="fw-bold fs-3">라온피플</h3>
+                      <h4 class="text-muted fs-5">
+                        하드웨어실 Logic팀<br />
+                        주임연구원<br />
+                        <small>2014.02 ~ 2018.01 (4년)</small>
+                      </h4>
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="./images/LAONPEOPLELogo.png"
+                        alt="라온피플로고"
+                        class="rounded-circle img-fluid"
+                      />
+                    </div>
                   </div>
-                  <img
-                    src="./images/service2.jpg"
-                    alt="서비스2"
-                    class="rounded-circle"
-                  />
+                  <p class="text-end">
+                    라온피플(주)는 AI기반 비전 솔루션을 개발 & 제공하는
+                    기업입니다. 컴퓨터 비전과 딥러닝 기술을 결합하여 산업
+                    자동화, 보안 감시, 의료 이미지 분석 데이터 솔루션을
+                    제공합니다.
+                  </p>
+                  <!-- <div class="ps-3">
+                  <p class="mb-0 fw-bold">경력요약</p>
+                  <ol>
+                    <li>FPGA Top Design 및 Boot Up Sequence설계</li>
+                    <li>Sensor Interface 설계</li>
+                    <ul>
+                      <li>Parallel Sensor Interface 설계 및 I2C통신 검증</li>
+                      <li>LVDS Sensor 영상 확인 및 SPI 통신 검증</li>
+                    </ul>
+                    <li>DDR Interface 설계</li>
+                    <li>저조도 Test, Linearity Test, Uniformity Test</li>
+                    <li>검증 Check list 작성</li>
+                  </ol>
+                </div> -->
                 </div>
-                <p class="text-end">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                  molestiae laboriosam vel corporis at deserunt facere! Libero
-                  sunt a suscipit iusto accusantium, recusandae laborum sed!
-                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ADT Modal -->
+      <div
+        class="modal fade"
+        id="ADTModal"
+        tabindex="-1"
+        aria-labelledby="ADTModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 fw-bold text-dark" id="ADTModalLabel">
+                에이디테크놀로지 (2018.02 ~ 2023.06)
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="닫기"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-muted pb-4">
+                <span class="fw-bold">[Samsung 5nm (Network Chip)]</span>
+                <ol>
+                  <li>Samsung RBS 과제 Design & Verification</li>
+                  <ul>
+                    <li>ADC/Temperature IP Controller Design & Verification</li>
+                    <li>
+                      IJTAG(tessent shell flow) interface design & Verification
+                    </li>
+                    <li>
+                      IP GLS Verification 및 TOP Design GLS, SDF annotation 후
+                      Timing Verification
+                    </li>
+                  </ul>
+                  <li>TestVector Generation</li>
+                  <li>Interface 검증을 위한 Testbench 구현</li>
+                  <li>개발, 검증과정에서 Jira 협업 툴 사용</li>
+                </ol>
+              </div>
+              <div class="text-muted pb-4">
+                <span class="fw-bold">[TSMC 130nm (Hypass Chip)]</span>
+                <ol>
+                  <li>CPU Based IP Verification</li>
+                  <ul>
+                    <li>USB internal/external PHY testmode 추가</li>
+                    <li>
+                      GLS Verification, SDF annotation 후 Timing Verification
+                    </li>
+                  </ul>
+                  <li>IO PAD Design & Verification</li>
+                  <ul>
+                    <li>IO Test 를 위한 Nand, toggle testbench 작성</li>
+                  </ul>
+                  <li>Boot Rom Code Simulation 검증</li>
+                  <li>Power Estimation (Spyglass Tool 사용)</li>
+                  <ul>
+                    <li>
+                      fsdb dump file 없이 Power estimation 을 위한 activity,
+                      probability 설정 방법 공유
+                    </li>
+                  </ul>
+                  <li>Test Vector Generation (VTRAN 사용)</li>
+                  <ul>
+                    <li>readback file 생성하여 Simulation 검증</li>
+                    <li>
+                      Signal masking, in/out pin, delete pin, cycle 주기 설정을
+                      위한 script 작성
+                    </li>
+                  </ul>
+                  <li>FPGA/SOC Datasheet 작성</li>
+                </ol>
+              </div>
+              <div class="text-muted pb-4">
+                <span class="fw-bold">[TSMC 65nm (위성폰)]</span>
+                <ol>
+                  <li>CPU Based IP Verification</li>
+                  <ul>
+                    <li>USB internal/external PHY testmode 추가</li>
+                    <li>
+                      GLS Verification, SDF annotation 후 Timing Verification
+                    </li>
+                  </ul>
+                  <li>IO PAD Design & Verification</li>
+                  <li>Clock Tree, Clock Path latency file 작성</li>
+                  <li>검증 Check list 작성</li>
+                </ol>
+              </div>
+              <div class="text-muted pb-4">
+                <span class="fw-bold">[TSMC 65nm (Automotive Chip)]</span>
+                <ol>
+                  <li>SPI Interface 검증</li>
+                  <ul>
+                    <li>검증을 위한 SPI Master Model 설계 및 Testbench 작성</li>
+                    <li>SPI Boot Sequence 동작 검증</li>
+                  </ul>
+                  <li>TESTMODE 검증</li>
+                  <ul>
+                    <li>TestPlan document 작성</li>
+                    <li>IO 검증을 위한 Testbench 작성</li>
+                  </ul>
+                  <li>LVDS Interface 검증</li>
+                  <li>
+                    GLS Verification, SDF annotation 후 Timing Verification
+                  </li>
+                  <li>TEST Vector Generation (VTRAN 사용)</li>
+                  <ul>
+                    <li>
+                      readback file 생성하여 Simulation 검증 (Signal masking,
+                      in/out pin, delete pin, cycle 주기 설정을 위한 script
+                      작성)
+                    </li>
+                    <li>검증 Check list 작성</li>
+                  </ul>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- LAON Modal -->
+      <div
+        class="modal fade"
+        id="LAONModal"
+        tabindex="-1"
+        aria-labelledby="LAONModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-dark" id="LAONModalLabel">
+                라온피플 (2014.02 ~ 2018.01)
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="닫기"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-muted pb-4">
+                <span class="fw-bold"
+                  >[CL50M 고해상도 카메라 (Mono/Color), CXP50M 고해상도 카메라
+                  (Mono)]</span
+                >
+                <ol>
+                  <li>FPGA : Xilinx</li>
+                  <li>Tool : Xilinx Vivado</li>
+                  <li>업무 :</li>
+                  <ul>
+                    <li>FPGA Top Design 설계</li>
+                    <li>DDR Interface 설계</li>
+                    <li>
+                      DDR 사용 PRNU, FPN 추출 알고리즘 설계 (DDR 에 PRNU, FPN
+                      보정데이터 저장)
+                    </li>
+                    <li>기타 보정 알고리즘 설계</li>
+                    <li>
+                      Table DPC logic 설계, Color Sensor 에 맞게 DPC 알고리즘
+                      변경 진행
+                    </li>
+                    <li>
+                      Verification(저조도 Test, Linearity Test, Uniformity Test)
+                    </li>
+                  </ul>
+                </ol>
+              </div>
+              <div class="text-muted pb-4">
+                <span class="fw-bold"
+                  >[1.2M 원 보드 USB Camera (Mono/Color), 5M 원 보드 USB Camera,
+                  10M 원 보드 USB Camera]</span
+                >
+                <ol>
+                  <li>FPGA : Xilinx</li>
+                  <li>Tool : Xilinx ISE</li>
+                  <li>업무 :</li>
+                  <ul>
+                    <li>Parallel Sensor Interface 설계 및 I2C 통신 검증</li>
+                    <li>Image 출력 8bit, 10bit, 12bit 구현</li>
+                    <li>Table DPC, LUT 기능 추가</li>
+                    <li>Color Camera 의 Color 튜닝 진행</li>
+                  </ul>
+                </ol>
+              </div>
+              <div class="text-muted pb-4">
+                <span class="fw-bold">[0.3M 초고속 카메라 (Mono/Color)]</span>
+                <ol>
+                  <li>FPGA : Xilinx</li>
+                  <li>Tool : Xilinx ISE</li>
+                  <li>업무 :</li>
+                  <ul>
+                    <li>LVDS Sensor 영상 확인 및 SPI 통신 검증</li>
+                    <li>Adaptive DPC, LUT, PRNU, FPN 기능 추가</li>
+                    <li>SPI Flash Interface 설계, Boot Up Sequence 설계</li>
+                    <li>
+                      AWB 기능 설계 (Gray World Assumption Algorithm 적용)
+                    </li>
+                    <li>
+                      Color Matrix Algorithm 사용하여 Color 튜닝 진행 및 튜닝 값
+                      적용
+                    </li>
+                  </ul>
+                </ol>
+              </div>
+              <div class="text-muted pb-4">
+                <span class="fw-bold">[Smart Camera]</span>
+                <ol>
+                  <li>FPGA : Xilinx (Revision 이후 Lattice 변경)</li>
+                  <li>Tool : Xilinx ISE, Lattice Diamond Tool 사용</li>
+                  <li>업무 :</li>
+                  <ul>
+                    <li>Logic 설계 주 개발, Function Test 및 디버깅</li>
+                    <li>Parallel Sensor Interface 설계 및 I2C 통신 검증</li>
+                    <li>YCbCr data 설계 및 영상확인</li>
+                    <li>주요 기능 (Trigger, Strobe) Test</li>
+                    <li>Trigger 종류에 따른 LED Control 및 Image data 전달</li>
+                  </ul>
+                </ol>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!--경력 끝-->
-      <!--SNS 섹션 시작-->
+      <!--마무리 시작-->
       <div id="banner" class="py-5">
-        <div class="container text-white text-center">
-          <h1 class="fw-bold my-3"></h1>
+        <div class="container text-white text-center py-2">
+          <h4 class="fw-bold my-3 open-font">
+            Thank you for reviewing JeeSeulAh's portfolio.
+          </h4>
         </div>
       </div>
-      <!--SNS 섹션 끝-->
-      <!--경험 시작-->
-      <div id="experience" class="container overflow-hidden py-5">
-        <div class="text-center py-5">
-          <h1 class="fw-bold mb-3">EXPERIENCE</h1>
-          <p class="lead text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Asperiores, tempore.
-          </p>
-        </div>
-        <div class="row pb-5 gy-4">
-          <div class="col-sm-6 col-lg">
-            <div class="card">
-              <img
-                src="./images/blog1.jpg"
-                class="card-img-top"
-                alt="블로그1"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title fs-4">블로그1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-warning btn-sm">read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg">
-            <div class="card">
-              <img
-                src="./images/blog2.jpg"
-                class="card-img-top"
-                alt="블로그2"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title fs-4">블로그2</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-warning btn-sm">read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg">
-            <div class="card">
-              <img
-                src="./images/blog3.jpg"
-                class="card-img-top"
-                alt="블로그3"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title fs-4">블로그3</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-warning btn-sm">read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg">
-            <div class="card">
-              <img
-                src="./images/blog4.jpg"
-                class="card-img-top"
-                alt="블로그4"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title fs-4">블로그4</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-warning btn-sm">read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--경험 끝-->
-
+      <!--마무리 끝-->
       <!--연락처 시작-->
-      <div id="contact" class="bg-secondary-subtle">
+      <section id="contact">
         <div class="container overflow-hidden py-5 text-center">
-          <div class="py-5">
-            <h1 class="fw-bold">CONTACT</1>
-            <p class="lead text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, cupiditate.
-            </p>
+          <div class="pt-5 pb-3">
+            <h1 class="fw-bold gugi-font">CONTACT</h1>
           </div>
           <div class="row py-5 gy-3">
             <div class="col-md-4">
               <div
-                class="shadow p-4 mb-5 border-bottom border-4 border-warning bg-light"
+                class="shadow p-4 mb-5 border-bottom border-4 border-warning"
               >
-                <i class="bi bi-envelope text-warning fs-5"></i>
-                <h4 class="fw-bold fs-5 py-2">이메일</h4>
+                <a href="mailto:jeeseula@gmail.com">
+                  <i class="bi bi-envelope text-warning fs-1"></i>
+                  <h4 class="fw-bold fs-5 py-2 open-font">GMAIL</h4>
+                </a>
                 <hr />
-                <p class="text-muted">contact@naver.com</p>
+                <button
+                  class="mailBtn text-muted btn"
+                  data-clipboard-text="jeeseula@gmail.com"
+                >
+                  <i class="bi bi-copy"></i>
+                  jeeseula@gmail.com
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="shadow p-4 mb-5 border-bottom border-4 border-black">
+                <a href="https://github.com/jeeseulah" target="_blank">
+                  <i class="bi bi-github text-black fs-1"></i>
+                  <h4 class="fw-bold fs-5 py-2 open-font">GITHUB</h4>
+                </a>
+                <hr />
+                <button
+                  class="gitBtn text-muted btn"
+                  data-clipboard-text="github.com/jeeseulah"
+                >
+                  <i class="bi bi-copy"></i>
+                  github.com/jeeseulah
+                </button>
               </div>
             </div>
             <div class="col-md-4">
               <div
-                class="shadow p-4 mb-5 border-bottom border-4 border-success bg-light"
+                class="shadow p-4 mb-5 border-bottom border-4 border-warning"
               >
-                <i class="bi bi-telephone-fill text-success fs-5"></i>
-                <h4 class="fw-bold fs-5 py-2">전화번호</h4>
+                <i class="bi bi-car-front-fill text-warning fs-1"></i>
+                <h4 class="fw-bold fs-5 py-2 open-font">ADDRESS</h4>
                 <hr />
-                <p class="text-muted">010-000-0000</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div
-                class="shadow p-4 mb-5 border-bottom border-4 border-warning bg-light"
-              >
-                <i class="bi bi-car-front-fill text-warning fs-5"></i>
-                <h4 class="fw-bold fs-5 py-2">주소</h4>
-                <hr />
-                <p class="text-muted text">성남시 중원구 아트펠리스</p>
+                <p class="text-muted align-middle pt-2 my-1">
+                  경기도 성남시 중원구
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--연락처 끝-->
       <!--푸터 시작-->
       <footer id="footer" class="bg-dark text-white">
         <div class="container text-center">
-          <p class="py-3 mb-0">
+          <p class="py-3 mb-0 open-font">
             Copyright <i class="bi bi-c-circle"></i> 2024 Designed by
             <a
               href="https://github.com/jeeseulah"
               target="_blank"
-              class="open-font link-warning text-decoration-none"
+              class="link-warning text-decoration-none"
               >Jee Seul Ah</a
             >
           </p>
         </div>
       </footer>
       <!--푸터 끝-->
+      <!--contact 모달-->
+      <div id="contactModal" class="modal bg-dark bg-opacity-50" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content">
+            <div class="modal-body text-center bg-dark text-light rounded">
+              <p class="fw-bold fs-5">복사되었습니다</p>
+              <button type="button" class="btn bg-light text-black w-100 py-2">
+                확인
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--부트스트랩-->
     <script
@@ -510,12 +1991,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!--제이쿼리CDN-->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
+    <!-- clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     <!--MY-->
     <script src="./javascript/index.js"></script>
   </body>
