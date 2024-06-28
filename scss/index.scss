@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+/*공통*/
+$max-width-768: 768px;
+
+@media screen and (max-width: $max-width-768) {
+  * {
+    font-size: 13px;
+  }
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.open-font {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.gugi-font {
+  font-family: "Gugi", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@mixin backgroundImg($imgName, $imgPosition) {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("../images/#{$imgName}.jpg");
+  background-size: cover;
+  background-position: center $imgPosition;
+  background-attachment: fixed; /*붙박이 처럼 붙이기*/
+}
+
+/*헤더영역*/
+header {
+  @include backgroundImg(seulaImg2, center);
+
+  @media screen and (max-width: $max-width-768) {
+    background-position: center left;
+  }
+}
+
+/*애니메이션*/
+#arrow {
+  animation: arrowDown 1s infinite;
+
+  @keyframes arrowDown {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  }
+}
+
+/*네비게이션 영역*/
+.nav-link:hover,
+.nav-link.active {
+  color: #ffc107 !important;
+}
+
+/* ABOUT */
+#about {
+  li {
+    list-style: none;
+  }
+}
+
+/*PROJECT*/
+#project {
+  .row img:hover {
+    opacity: 0.6;
+  }
+}
+
+#puppyProjectModal a:hover,
+#movieProjectModal a:hover {
+  color: gray;
+}
+
+/* CAREER */
+#career {
+  .card-hover:hover {
+    background-color: #ffc10726;
+    cursor: pointer;
+  }
+}
+
+/*banner*/
+#banner {
+  @include backgroundImg(end-bg, top);
+}
+
+/* CONTACT */
+#contact {
+  a:hover {
+    color: gray;
+  }
+}
+
+/* 애니메이션 */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s 0.25s ease;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

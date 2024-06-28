@@ -1,14 +1,12 @@
-@charset "utf-8";
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&display=swap");
-
 /*공통*/
 @media screen and (max-width: 768px) {
   * {
     font-size: 13px;
   }
 }
-
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -30,15 +28,10 @@ a {
 
 /*헤더영역*/
 header {
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url("../images/seulaImg2.JPG");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("../images/seulaImg2.jpg");
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed; /*붙박이 처럼 붙이기*/
 }
 @media screen and (max-width: 768px) {
   header {
@@ -50,7 +43,6 @@ header {
 #arrow {
   animation: arrowDown 1s infinite;
 }
-
 @keyframes arrowDown {
   0% {
     transform: translateY(-20px);
@@ -71,7 +63,7 @@ header {
   color: #ffc107 !important;
 }
 
-/*ABOUT*/
+/* ABOUT */
 #about li {
   list-style: none;
 }
@@ -86,37 +78,31 @@ header {
   color: gray;
 }
 
-/*CAREER*/
-.card-hover:hover {
-  background-color: #ffc10726;
+/* CAREER */
+#career .card-hover:hover {
+  background-color: rgba(255, 193, 7, 0.1490196078);
   cursor: pointer;
 }
 
 /*banner*/
 #banner {
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url("../images/end-bg.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("../images/end-bg.jpg");
   background-size: cover;
   background-position: center top;
   background-attachment: fixed; /*붙박이 처럼 붙이기*/
 }
 
-/*CONTACT*/
+/* CONTACT */
 #contact a:hover {
   color: gray;
 }
 
-/*애니메이션*/
+/* 애니메이션 */
 section {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.5s 0.25s ease;
 }
-
 section.show {
   opacity: 1;
   transform: translateY(0);
