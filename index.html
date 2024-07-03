@@ -1795,9 +1795,8 @@
                         검색 기능을 실행하도록 했습니다.
                       </li>
                       <li>
-                        <code>useNavigate</code> Hook을 사용하여 검색 버튼 클릭
-                        또는 enter키를 눌렀을 때 URL에 검색어가 표시되도록
-                        했습니다.
+                        검색 버튼을 클릭하거나 또는 enter키를 눌렀을 때 모두
+                        검색이 가능합니다.
                       </li>
                       <li>
                         <code>Link</code> component를 사용하여 로고를 클릭하면
@@ -1826,8 +1825,8 @@
                         </td>
                         <td>
                           <img
-                            src="./images/pixfree/Spinner.gif"
-                            alt="Spinner"
+                            src="./images/pixfree/spinner.gif"
+                            alt="spinner"
                             loop="infinite"
                             class="img-fluid"
                           />
@@ -1898,15 +1897,6 @@
                         react router를 사용하여 뒤 배경이 살아 있지만, URL이
                         변경되는 모달을 구현했습니다.
                       </li>
-                      <li>
-                        <code>Link to</code> component를 사용하여 이미지 클릭 시
-                        해당 이미지의 id값과 추가적인 state객체를 전달합니다.
-                      </li>
-                      <li>
-                        <code>useLocation</code>을 사용하여 현재 페이지의
-                        URL정보를 가지고 와서, 이 정보를 기반으로 URL경로가
-                        존재할 경우 모달 창이 열리도록 구현했습니다.
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -1955,13 +1945,13 @@
                     <li>
                       Unsplash 이미지들은 각기 다른 사이즈를 가지고 있습니다.
                       위와 같이 이러한 다양한 사이즈의 이미지들을 일정한
-                      간격으로 정렬하여 보여주기 위해, 이미지들을 vertical
-                      방향으로 정렬한 <code>div</code>태그가 있습니다. (위의
+                      간격으로 정렬하여 보여주기 위해, 이미지들을 포함한
+                      <code>div</code>태그를 vertical로 정렬하였습니다. (위의
                       이미지로 예를들면, 세로로 정렬된 <code>div</code>가 5개
                       있습니다)
                     </li>
                     <li>
-                      2차원 배열을 구현하기 위해 <code>push를</code>를 사용하여
+                      2차원 배열을 구현하기 위해 <code>push</code>를 사용하여
                       배열에 요소를 추가했습니다.
                     </li>
                   </ul>
@@ -1993,8 +1983,8 @@
                       가져옵니다.
                     </li>
                     <li>
-                      <code>onChange</code> : <code>searchQuery값을</code>값을
-                      받기 위해 사용했습니다.
+                      <code>onChange</code> : <code>searchQuery</code>값을 받기
+                      위해 사용했습니다.
                     </li>
                     <li>
                       <code>value</code> : 검색기능을 사용하다가 main페이지로
@@ -2046,13 +2036,10 @@
                       변경되는 모달을 구현했습니다.
                     </li>
                     <li>
-                      <code>useLocation</code>훅을 사용하여 현재 URL경로 정보를
-                      <code>location</code>변수에 할당합니다.
-                    </li>
-                    <li>
-                      <code>Link to</code>component를 사용하여 이미지 클릭 시
-                      해당 이미지의 id값과 추가적인 state객체를 전달하여
-                      이미지의 상세 페이지로 이동합니다.
+                      <code>useLocation</code> 훅을 사용하여 background의
+                      URL경로 정보를 <code>location</code>변수에 할당하고
+                      <code>Link to</code> component의 state객체를 통해
+                      전달합니다.
                     </li>
                     <li>
                       <code>Link</code> component에 <code>key</code>속성을
@@ -2066,21 +2053,15 @@
                   />
                   <ul>
                     <li>
-                      <code>useLocation</code>을 사용하여 현재 페이지의
-                      URL정보를 가지고 와서, 이 정보를 기반으로 URL경로가 존재할
-                      경우 모달 창이 열리도록 구현했습니다.
+                      <code>useLocation</code> 훅을 사용하여
+                      <code>Link to</code>로 전달 받은 background의 URL경로
+                      정보를 가지고 와서, 이 정보를 기반으로 background의
+                      URL경로가 존재할경우 모달 창이 열리도록 구현했습니다.
                     </li>
                     <li>
-                      <code>location={backgroundLocation || location}</code>을
-                      사용하여, <code>backgroundLocation</code>이 존재하면 그
-                      값을 기반으로 라우팅을 처리하고, 그렇지 않으면 현재
-                      <code>location</code> 값을 기반으로 라우팅을 처리합니다.
-                    </li>
-                    <li>
-                      <code><Route path="/" element="{<PictureList" />} /></code
+                      <code>Route path="/" element="{<PictureList" />}</code
                       >와<code
-                        ><Route path="/photos/:id" element="{<PictureList" />}
-                        /></code
+                        >Route path="/photos/:id" element="{<PictureList" />} </code
                       >부분은 첫번째 모달을 띄울 때는 <code>background</code>의
                       주소값이 <code>"/"</code>이지만 모달창이 열린 상태에서
                       다른 이미지로 이동 할 경우 background의 주소값이 이전
@@ -2133,7 +2114,7 @@
                   이번에 처음으로 React 프로젝트를 진행하면서 새로운 기능을
                   추가할 때마다, React Hook들의 다양함에 대해 크게 인식하게
                   되었습니다. <br />
-                  블로그를 찾아보면 사용했던 Hook이 최신 버전이나 업데이트
+                  블로그를 찾아보면 사용했던 Hook이 최신 버전으로 업데이트
                   되거나 새로운 기능이 추가된 경우가 많았습니다. 하나의 기능을
                   구현하는 데도 여러 가지 방법으로 존재하며, 이에 따라 어떤
                   Hook을 선택하여 구현해야 할지 많은 고민이 필요했습니다.<br />
